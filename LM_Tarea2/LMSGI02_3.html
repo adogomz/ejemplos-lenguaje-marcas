@@ -1,0 +1,178 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+
+<title>Reserva de habitaci&oacute;n en WWW.MIHOTEL.COM</title>
+
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<link rel="stylesheet" href="formulario.css" type="text/css" />
+
+</head>
+<body class="sub">
+<table width="101%" border="0" cellspacing="0" cellpadding="4">
+  <tr>
+    <td style="vertical-align: top">
+      <form action="reservas.php" method="post" id="reserva">
+        <table width="90%" border="0" cellspacing="2" cellpadding="4">
+        	<tr>
+        		<td colspan="2"><h2>MI HOTEL - Reserva on line</h2></td>
+        	</tr>
+          <tr>
+            <td width="30%" class="TitleColor" style="vertical-align: top">
+            	Nombre:
+            </td>
+            <td width="70%">
+              <input id="nombre" name="nombre" type="text" size="90%" />
+            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top" class="TitleColor">
+              Apellidos:
+            </td>
+            <td>
+              <input id="apellidos" name="apellidos" type="text" size="90%" />            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top" class="TitleColor">
+              Tel&eacute;fono:
+            </td>
+            <td>
+              <input id="telefono" name="telefono" type="text" size="90%" />            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top" class="TitleColor">
+              eMail:
+            </td>
+            <td>
+              <input id="email" name="email" type="text" size="90%" />            </td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top" class="TitleColor">
+              N&uacute;mero de noches:
+            </td>
+            <td><input id="noches" name="noches" type="text" size="90%" /></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top" class="TitleColor">
+              Fecha de entrada:
+            </td>
+            <td><span class="TitleColor">D&iacute;a</span>:
+              <select name="diaMes" size="1" id="diaMes">
+                <option selected="selected">1</option>
+                <option>2</option>
+                <option>3</option>
+                <option>4</option>
+                <option>5</option>
+                <option>6</option>
+                <option>7</option>
+                <option>8</option>
+                <option>9</option>
+                <option>10</option>
+                <option>11</option>
+                <option>12</option>
+                <option>13</option>
+                <option>14</option>
+                <option>15</option>
+                <option>16</option>
+                <option>17</option>
+                <option>18</option>
+                <option>19</option>
+                <option>20</option>
+                <option>21</option>
+                <option>22</option>
+                <option>23</option>
+                <option>24</option>
+                <option>25</option>
+                <option>26</option>
+                <option>27</option>
+                <option>28</option>
+                <option>29</option>
+                <option>30</option>
+                <option>31</option>
+              </select>
+              <span class="TitleColor">Mes</span>
+              <select name="mesDia">
+                <option value="1" selected="selected">Enero</option>
+                <option value="2">Febrero</option>
+                <option value="3">Marzo</option>
+                <option value="4">Abril</option>
+                <option value="5">Mayo</option>
+                <option value="6">Junio</option>
+                <option value="7">Julio</option>
+                <option value="8">Agosto</option>
+                <option value="9">Septiembre</option>
+                <option value="10">Octubre</option>
+                <option value="11">Noviembre</option>
+                <option value="12">Diciembre</option>
+            </select></td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top" class="TitleColor">
+              <label for="email">Tipo de habitaci&oacute;n:</label>            </td>
+            <td>
+            <table width="100%" border="0" cellpadding="0" cellspacing="0">
+            	<tr>
+               	  <td>
+                    	<input type="radio" name="habitacion" id="habitacion" value="simple" />
+                        <span class="TitleColor">Simple</span>
+              				
+            		</td>
+					<td>
+                    	<input type="radio" name="habitacion" id="habitacion" value="doble" />
+                        <span class="TitleColor">Doble</span>
+                    </td>
+                    <td>
+                    	<input type="radio" name="habitacion" id="habitacion" value="matrimonio" />
+                        <span class="TitleColor">Matrimonio</span>
+                    </td>
+                </tr>
+            </table>           	</td>
+          </tr>
+          <tr>
+            <td style="vertical-align: top" class="TitleColor">
+              <label for="subject">Extras:</label>            </td>
+            <td>
+            	<table width="100%" border="0px" cellpadding="0px" cellspacing="0px">
+                	<tr>
+                    	<td>
+              				<input type="checkbox" name="desayuno" id="desayuno" />
+              				<span class="TitleColor">Desayuno</span>
+                        </td>
+                    	<td>
+              				<input type="checkbox" name="comida" id="comida" />
+              				<span class="TitleColor">Comida</span>
+                        </td>
+                    	<td>
+              				<input type="checkbox" name="cena" id="cena" />
+              				<span class="TitleColor">Cena</span>
+                        </td>
+                    	<td>
+              				<input type="checkbox" name="supletoria" id="supletoria" />
+              				<span class="TitleColor">Cama supletoria</span>
+                        </td>
+                    </tr>
+                </table>
+             </td>
+          </tr>
+          <tr>
+            <td colspan="2" style="vertical-align: top" class="TitleColor">
+              <label for="message">Comentarios:</label>
+              <br />
+              <br />
+              <textarea id="message" name="comentarios" rows="5" cols="50"></textarea>
+            </td>
+          </tr>
+          <tr>
+            <td>
+              <input type="submit" name="Submit" value="Enviar" />
+            </td>
+            <td>
+              <input type="reset" name="reset" value="Borrar" />
+            </td>
+          </tr>
+        </table>
+      </form>
+  </tr>
+</table>
+</body>
+</html>

@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<recetas xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="receta1.xsd">
+	<receta>
+		<nombre>Tarta de chocolate</nombre>
+		<calorias>600</calorias>
+		
+		<ingredientes>
+			<ingrediente>Colacao</ingrediente>
+			<ingrediente>Mantequilla</ingrediente>
+		</ingredientes>	
+	</receta>
+</recetas>

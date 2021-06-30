@@ -1,0 +1,50 @@
+/* Estilos utilizados */
+body {
+	margin:0px;
+	}
+	
+td {
+	font:11px arial;
+	color:#333333;
+	}
+
+.logo {
+	font:18px times new roman;
+	color: #333300;
+	letter-spacing:.4em;
+	font-weight:bold;
+	}
+
+.bajoFoto {
+	font:12px georgia;
+	color: #336666;
+	line-height:18px;
+	}
+	
+.cuerpoTexto {
+	font:11px arial;
+	line-height:24px;
+	color:#333333;
+	padding: 5px 20px;
+	}
+	
+.titulo {
+	font:20px georgia;
+	color: #CC3300;
+	letter-spacing:.1em;
+	line-height:26px;
+	padding-left: 10px;
+	}
+
+.enlace{
+	font:12px georgia;
+	color:#003300;
+	text-decoration:none;
+	text-align:center;
+	}
+	
+.enlace:hover{
+	text-decoration:none;
+	background-color:#FFCC00;
+	padding: 1px 20px;
+	}

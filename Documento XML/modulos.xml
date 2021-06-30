@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>  <!-- definicion del documento y la version y la codificacion de los caracteres -->
+<!-- vamos a crear un fichero que almacena diferentes modulos -->
+
+
+<modulos>
+	<modulo id=L"MGSI">
+		<nombre>Lenguaje de marcas y sistemas de gestion de la informacion</nombre>
+		<profesores>
+			<profesor>
+				<idProfesor>001</idProfesor>
+				<nombreProfesor>Iñigo Zarate</nombreProfesor>
+			</profesor>
+			<profesor>
+				<idProfesor>002</idProfesor>
+				<nombreProfesor>Nora San Saturnino</nombreProfesor>
+			</profesor>
+		</profesores>
+	</modulo>
+		
+	<modulo id="BD">
+		<nombre horas="182">base de datos</nombre>
+		<profesores>
+			<profesor>
+				<idProfesor>001</idProfesor>
+				<nombreProfesor>Iñigo Zarate</nombreProfesor>
+			</profesor>
+			<profesor>
+				<idProfesor>002</idProfesor>
+				<nombreProfesor>Nora San Saturnino</nombreProfesor>
+			</profesor>
+		</profesores>
+	</modulo>
+
+</modulos>

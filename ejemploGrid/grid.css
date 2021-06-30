@@ -1,0 +1,58 @@
+body {
+    background: #f8f8f8;
+    font-family: 'Roboto', sans-serif;
+}
+
+main.contenedor {
+    background: #ffffff;
+    box-shadow: 0 0 10px rgba(0,0,0,.1);
+    margin: 0 auto;
+    width: 777px;
+    grid-template-columns: repeat(4, 1fr);
+    display: grid;
+    grid-template-areas:        
+        "header header header header"        
+        "contenido contenido contenido noticias"        
+        "footer footer footer footer";
+    column-gap: 5px;
+    row-gap: 5px;
+}
+
+header  {grid-area: header;     }
+section {grid-area: contenido;  }
+aside   {grid-area: noticias;   }
+footer  {grid-area: footer;     }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* PREFIJOS RECOMENDADOS
+*/
+
+.prefijos {
+display: -webkit-box;  /* Navegadores Viejos - iOS 6-, Safari 3.1-6, BB7 */
+display: -ms-flexbox;  /* Internet Explorer 10 */
+display: -webkit-flex; /* Safari 6.1+. iOS 7.1+, BB10 */
+display: flex;         /* Firefox, Chrome, Opera */
+}

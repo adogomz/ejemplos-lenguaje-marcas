@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+	<xs:element name="recetas" type="TRecetas"/>
+	
+	<xs:complexType name="TRecetas">
+		<xs:sequence>
+			<xs:element name="receta" type="TReceta" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="TReceta">
+		<xs:sequence>
+			<xs:element name="nombre" type="TNombre"/>
+			<xs:element name="calorias" type="TCalorias"/>
+			<xs:element name="ingredientes" type="Tingredientes"/>
+			<xs:element name="pasos" type="TPasos"/>
+		</xs:sequence>
+		<xs:attribute name="tipo" type="xs:string"/>
+		<xs:attribute name="fecha" type="xs:date" default="2020-10-02"/> 
+	</xs:complexType>
+	
+	
+	<xs:simpleType name="TCalorias">
+		<xs:restriction base="xs:integer">
+			<xs:maxInclusive value="1000"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	<xs:simpleType name="TNombre">
+		<xs:restriction base="xs:string">
+			<xs:pattern value="([a-z])*"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+	
+	<xs:complexType name="Tingredientes">
+		<xs:sequence>
+			<xs:element name="ingrediente" type="Tingre" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+		<xs:complexType name="Tingre">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="cantidad" type="xs:string"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	
+		<xs:complexType name="TPasos">
+		<xs:sequence>
+			<xs:element name="paso" type="TPaso" maxOccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+		<xs:complexType name="TPaso">
+		<xs:simpleContent>
+			<xs:extension base="xs:string">
+				<xs:attribute name="orden" type="TOrden"/>
+			</xs:extension>
+		</xs:simpleContent>
+	</xs:complexType>
+	
+	
+	
+	<xs:simpleType name="TOrden">
+		<xs:restriction base="xs:integer">
+			<xs:totalDigits value="2"/>
+		</xs:restriction>
+	</xs:simpleType>
+	
+</xs:schema> 

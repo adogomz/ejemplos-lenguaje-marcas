@@ -1,0 +1,24 @@
+header {
+	background-color: salmon;
+	width: 100%;
+	margin: auto;
+}
+
+h1 {
+	background-color: silver;
+	color: #fff;
+	margin: 10px auto 10px auto;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 150%;
+}
+
+.absolutas {
+	width: 600px;
+	text-align: center;
+}
+
+.relativas {
+	width: 50%;
+	text-align: center;
+}

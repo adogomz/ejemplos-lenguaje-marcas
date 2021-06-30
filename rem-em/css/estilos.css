@@ -1,0 +1,103 @@
+* {
+	box-sizing:  border-box;
+}
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-family: Raleway, sans-serif;
+	font-size: 1rem;
+	line-height: 1.5;
+	background-color: white;
+	color: black;
+	min-height: 100vh;
+	display: flex;
+	flex-direction: column;
+	margin: 1rem;
+}
+
+.header {
+	margin-bottom: 1rem;
+}
+
+.main {
+	display: grid;
+	grid-gap: 1rem;
+	grid-template-columns: repeat(auto-fill, minmax(320px, 1fr));
+}
+
+.footer {
+	margin-top: auto;
+}
+
+section {
+	font-size: 1rem;
+	padding: 1rem;
+	border: 0.0625em solid darkmagenta;  
+}
+
+h1 {
+	font-weight: 700;
+	font-size: 3rem;
+	line-height: 1.1;
+}
+
+h2 {
+	font-weight: 700;
+}
+
+p {
+	margin-top: 1rem;
+}
+
+strong {
+	font-weight: 700;
+	background-color: #ffbcff;
+	padding: 0 0.125rem;
+}
+
+
+/* Dimensionado con pixels */
+.pxFont h2 {
+	font-size: 32px;
+}
+	
+.pxFont	p {
+	font-size: 20px;
+}	
+
+.pxLineHeight h2 {
+	line-height: 40px;
+}
+	
+.pxLineHeight p {
+	line-height: 24px;
+}
+
+/* Dimensionado con rem */
+.remFont h2 {
+	font-size: 2rem;
+}
+	
+.remFont	p {
+	font-size: 1.25rem;
+}
+
+.remLineHeight h2{
+	line-height: 2.5rem;
+}
+	
+.remLineHeight p {
+	line-height: 1.5rem;
+}
+
+.emLineHeight h2{
+	line-height: 1.25em;
+}
+
+/* Dimensionado con em */
+.emLineHeight p {
+	line-height: 1.5em;
+}

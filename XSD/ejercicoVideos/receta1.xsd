@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<xs:schema xmls:xs="http://www.w3.org/2001/XMLSchema">
+	<xs:elemente name="recetas" type="TRecetas"/>
+	
+	<xs:complexType name="TRecetas>
+		<xs:sequence>
+			<xs:element name="receta" type="TRecetas"/>
+		</xs:sequence>
+	</xs:complexType>
+	
+	<xs:complexType name="TRecetas">
+		<xs:all>
+			<xs:element name="receta" type="xs:string"/>
+			<xs:element name="calorias" type="xs:integer"/>
+			<xs:element name="receta" type="TIngredientes"/>
+		</xs:sequence>
+	</xs:all>
+	
+	<xs:complexType name="TIngredientes">
+		<xs:sequence>
+			<xs:element name="ingrediente" type="xs:string" maxoccurs="unbounded"/>
+		</xs:sequence>
+	</xs:complexType>
+
+
+</xs:schema>

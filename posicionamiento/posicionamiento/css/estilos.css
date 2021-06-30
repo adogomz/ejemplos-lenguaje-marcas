@@ -1,0 +1,81 @@
+
+body {
+	display: grid;
+    grid-template-columns: 15% auto 20%;
+	grid-template-rows: repeat(3, auto);
+	grid-gap: 10px;
+}
+
+header, footer, nav, main, aside {
+	background-color: silver;
+	color: #fff;
+	border-radius: 5px;
+	padding: 20px;
+	font-size: 150%;
+}
+
+header {
+	grid-column: 1 / 4;
+    grid-row: 1 ;
+}
+
+footer {
+	position: relative;
+	grid-column: 1 / 4;
+    grid-row: 3 ;
+}
+
+footer p {
+	position: relative;
+	z-index: 3;
+}
+
+nav {
+	display: flex;
+	flex-direction: column;
+}
+
+.imagen-float {
+	width: 300px;
+	float: right;
+}
+
+.fin-float {
+	clear: both;
+}
+
+.contenedor-iconos {
+	display: grid;
+    grid-template-columns: 50% 50%;
+	grid-template-rows: repeat(3, auto);
+	justify-items: center;
+	align-items: center;
+}
+
+.titulo-iconos {
+	grid-column: 1 / 3;
+    grid-row: 1 ;
+}
+
+.icono {
+	width: 50px
+}
+
+.anuncio {
+	position: fixed;
+	top: 200px;
+	left: 200px;
+	height: 200px;
+	width:200px;
+	background-color: salmon;
+}
+
+.posicion-absoluta {
+	position: absolute;
+	top: 20px;
+	left: 50px;
+	width: 100px;
+	z-index: 2;
+}
+
+
